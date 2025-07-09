@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dual YouTube Player</title>
+</head>
+
+<body>
+    <div class="marquees">
+        <marquee behavior="scroll" direction="left" loop="infinite">
+            Find Table 1 <a href="https://www.youtube.com/@MatchroomPool1/streams" rel="noopener noreferrer"
+                target="_blank">@MatchroomPool1</a> ... Find Table 2 <a
+                href="https://www.youtube.com/@MatchroomMultiSport/streams" rel="noopener noreferrer"
+                target="_blank">@MatchroomMultiSport</a> ...
+        </marquee>
+    </div>
+    <div class="header">
+        <h1>Dual <span class="youtube">YouTube</span> Player</h1>
+        <p style="padding: 0px; margin: 0px;">Built for Champions League Snooker Events
+        </p>
+    </div>
+    <div class="video-container">
+        <div class="video">
+            <input type="text" id="video1-link" placeholder="Enter YouTube video link">
+            <button onclick="loadVideo('video1')">Load Video</button>
+            <div id="video1-container" aria-live="polite"></div>
+        </div>
+        <div class="video">
+            <input type="text" id="video2-link" placeholder="Enter YouTube video link">
+            <button onclick="loadVideo('video2')">Load Video</button>
+            <div id="video2-container" aria-live="polite"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
